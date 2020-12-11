@@ -10,7 +10,6 @@ public class StripComments {
      */
     public static void main(String[] args) {
         System.out.println(stripComments( "a #b\nc\nd $e f g", new String[] { "#", "$" } ));
-        //System.out.println("a #b\nc\nd $e f g".replaceAll("\\#.*", ""));
     }
     public static String stripComments(String text, String[] commentSymbols) {
         List<String> list = new ArrayList<>();
