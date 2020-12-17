@@ -35,10 +35,10 @@ public class WorkingWithStrings {
 //        list.forEach(System.out::println);
         System.out.println("5 ---------------------------------");
         //Задание 5: Реализуйте свой Iterator для обхода списка в обратном порядке.
-        ArrayDeque<String> stack = new ArrayDeque<>();
-        LoadFileToList.loadFile(stack , "C:\\Users\\ShadowSith\\IdeaProjects\\JAVASber\\Codewars\\src\\main\\java\\file.txt");
-        while(stack.peek()!=null){
-            System.out.println(stack.pollLast());
+
+        IteratorRevers iterator = new IteratorRevers(list);
+        while(iterator.hasNext()){
+            System.out.println(iterator.next());
         }
         System.out.println("6 ---------------------------------");
         //Задание 6: Выведите на экран строки, номера которых задаются пользователем в произвольном порядке.
