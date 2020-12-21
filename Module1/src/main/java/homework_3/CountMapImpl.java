@@ -36,12 +36,12 @@ public class CountMapImpl<T> implements CountMap<T>{
     }
 
     @Override
-    public Map<? super T, Integer> toMap() {
+    public Map<T, Integer> toMap() {
         return map;
     }
 
     @Override
-    public void toMap(Map<? super T, Integer> destination) {
+    public void toMap(Map<T, Integer> destination) {
         map.forEach((k,v) -> destination.put(k,v));
     }
 }
